@@ -1,0 +1,158 @@
+{
+  "trades": {
+    "take_profit": {
+      "EUR_USD": 80,
+      "GBP_USD": 40,
+      "EUR_GBP": 40,
+      "AUD_CAD": 40,
+      "EUR_CAD": 40,
+      "EUR_AUD": 40,
+      "USD_JPY": 40,
+      "EUR_JPY": 80,
+      "EUR_NZD": 80,
+      "EUR_CHF": 80,
+      "EUR_SGD": 80,
+      "USD_CHF": 80,
+      "USD_CAD": 80,
+      "USD_SGD": 80,
+      "NZD_USD": 80,
+      "AUD_USD": 80,
+      "GBP_JPY": 80,
+      "GBP_AUD": 80,
+      "GBP_CAD": 80,
+      "GBP_CHF": 80,
+      "GBP_NZD": 80,
+      "GBP_SGD": 80,
+      "SGD_JPY": 80,
+      "NZD_CAD": 80,
+      "NZD_SGD": 80
+    },
+    "stop_loss": {
+      "EUR_USD": 100,
+      "GBP_USD": 40,
+      "EUR_GBP": 40,
+      "AUD_CAD": 40,
+      "EUR_CAD": 40,
+      "EUR_AUD": 40,
+      "USD_JPY": 40,
+      "EUR_JPY": 80,
+      "EUR_NZD": 80,
+      "EUR_CHF": 80,
+      "EUR_SGD": 80,
+      "USD_CHF": 80,
+      "USD_CAD": 80,
+      "USD_SGD": 80,
+      "NZD_USD": 80,
+      "AUD_USD": 80,
+      "GBP_JPY": 80,
+      "GBP_AUD": 80,
+      "GBP_CAD": 80,
+      "GBP_CHF": 80,
+      "GBP_NZD": 80,
+      "GBP_SGD": 80,
+      "SGD_JPY": 80,
+      "NZD_CAD": 80,
+      "NZD_SGD": 80
+    },
+    "units": {
+      "EUR_USD": 4000,
+      "GBP_USD": 2000,
+      "EUR_GBP": 10000,
+      "AUD_CAD": 1000,
+      "EUR_CAD": 1000,
+      "EUR_AUD": 1000,
+      "USD_JPY": 1000,
+      "EUR_JPY": 2000,
+      "EUR_NZD": 2000,
+      "EUR_CHF": 2000,
+      "EUR_SGD": 2000,
+      "USD_CHF": 2000,
+      "USD_CAD": 2000,
+      "USD_SGD": 2000,
+      "NZD_USD": 2000,
+      "AUD_USD": 2000,
+      "GBP_JPY": 2000,
+      "GBP_AUD": 2000,
+      "GBP_CAD": 2000,
+      "GBP_CHF": 2000,
+      "GBP_NZD": 2000,
+      "GBP_SGD": 2000,
+      "SGD_JPY": 2000,
+      "NZD_CAD": 2000,
+      "NZD_SGD": 2000
+    }
+  },
+  "indicators": [
+    {
+      "name": "ema",
+      "period": 20,
+      "column": "close"
+    },
+    {
+      "name": "rsi",
+      "period": 14,
+      "column": "close"
+    },
+    {
+      "name": "sma",
+      "period": 100,
+      "column": "close"
+    },
+    {
+      "name": "momentum",
+      "period": 2,
+      "column": "close"
+    },
+    {
+      "name": "adx",
+      "period": 10,
+      "column": "close"
+    }
+  ],
+  "strategies": [
+    {
+      "name": "close_rsi",
+      "buy": 70,
+      "sell": 30,
+      "condition_sell": "menorigual",
+      "condition_buy": "mayorigual",
+      "symbols": [
+        "USD_JPY",
+        "USD_CHF",
+        "USD_CAD",
+        "USD_SGD",
+        "NZD_USD",
+        "AUD_USD",
+        "GBP_USD",
+        "GBP_JPY",
+        "GBP_AUD",
+        "GBP_CAD",
+        "GBP_CHF",
+        "GBP_NZD",
+        "GBP_SGD",
+        "SGD_JPY",
+        "AUD_CAD",
+        "NZD_CAD",
+        "NZD_SGD"
+      ]
+    },
+    {
+      "name1": "close_ema",
+      "name2": "close_sma",
+      "buy": 0.005,
+      "sell": 0.005,
+      "condition_sell": "menorigual",
+      "condition_buy": "mayorigual",
+      "symbols": [
+        "EUR_USD",
+        "EUR_GBP",
+        "EUR_JPY",
+        "EUR_CAD",
+        "EUR_NZD",
+        "EUR_AUD",
+        "EUR_CHF",
+        "EUR_SGD"
+      ]
+    }
+  ]
+}

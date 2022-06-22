@@ -1,0 +1,12 @@
+v20
+pandas
+numpy
+sqlalchemy
+flask
+pangres 
+flask_restful 
+flask_sqlalchemy 
+flask_migrate 
+flask_marshmallow 
+marshmallow-sqlalchemy
+mysql-connector-python
